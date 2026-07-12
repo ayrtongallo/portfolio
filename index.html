@@ -12,18 +12,18 @@
 <header class="fixed top-0 left-0 w-full z-50 bg-zinc-950/40 backdrop-blur-xs border-b border-zinc-900/80 shadow-lg shadow-zinc-950/20">
     <nav class="max-w-6xl mx-auto px-6 sm:px-10">
         <ul class="flex justify-between items-center py-5">
-            <li class="font-bold text-xl tracking-wider font-sans text-white hover:text-cyan-400 transition-colors duration-200">
+            <li class="font-bold text-xl tracking-wider font-sans text-white hover:text-red-400 transition-colors duration-200">
                 <a href="#home">Ayrton</a>
             </li>
 
             <div class="hidden md:flex gap-8">
-                    <a href="#home" class="text-sm font-medium text-zinc-400 hover:text-cyan-400 pb-1 border-b-2 border-transparent hover:border-cyan-500/50 transition-all duration-200">Home</a>
-                    <a href="#projects" class="text-sm font-medium text-zinc-400 hover:text-cyan-400 pb-1 border-b-2 border-transparent hover:border-cyan-500/50 transition-all duration-200">Projects</a>
-                    <a href="#skills" class="text-sm font-medium text-zinc-400 hover:text-cyan-400 pb-1 border-b-2 border-transparent hover:border-cyan-500/50 transition-all duration-200">Skills</a>
-                    <a href="#about" class="text-sm font-medium text-zinc-400 hover:text-cyan-400 pb-1 border-b-2 border-transparent hover:border-cyan-500/50 transition-all duration-200">About</a>
-                    <a href="#experience" class="text-sm font-medium text-zinc-400 hover:text-cyan-400 pb-1 border-b-2 border-transparent hover:border-cyan-500/50 transition-all duration-200">Experience</a>
-                    <a href="#education" class="text-sm font-medium text-zinc-400 hover:text-cyan-400 pb-1 border-b-2 border-transparent hover:border-cyan-500/50 transition-all duration-200">Education</a>
-                    <a href="#contact" class="text-sm font-medium text-zinc-400 hover:text-cyan-400 pb-1 border-b-2 border-transparent hover:border-cyan-500/50 transition-all duration-200">Contact</a>
+                <a href="#home" class="text-sm font-medium text-zinc-400 hover:text-red-400 pb-1 border-b-2 border-transparent hover:border-red-500/50 transition-all duration-200">Home</a>
+                <a href="#projects" class="text-sm font-medium text-zinc-400 hover:text-red-400 pb-1 border-b-2 border-transparent hover:border-red-500/50 transition-all duration-200">Projects</a>
+                <a href="#skills" class="text-sm font-medium text-zinc-400 hover:text-red-400 pb-1 border-b-2 border-transparent hover:border-red-500/50 transition-all duration-200">Skills</a>
+                <a href="#about" class="text-sm font-medium text-zinc-400 hover:text-red-400 pb-1 border-b-2 border-transparent hover:border-red-500/50 transition-all duration-200">About</a>
+                <a href="#experience" class="text-sm font-medium text-zinc-400 hover:text-red-400 pb-1 border-b-2 border-transparent hover:border-red-500/50 transition-all duration-200">Experience</a>
+                <a href="#education" class="text-sm font-medium text-zinc-400 hover:text-red-400 pb-1 border-b-2 border-transparent hover:border-red-500/50 transition-all duration-200">Education</a>
+                <a href="#contact" class="text-sm font-medium text-zinc-400 hover:text-red-400 pb-1 border-b-2 border-transparent hover:border-red-500/50 transition-all duration-200">Contact</a>
             </div>
         </ul>
     </nav>
@@ -31,14 +31,15 @@
 
 <main class="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth">
 
+    <!-- HOME SECTION -->
     <div id="home" class="relative h-screen w-full snap-start">
         <section class="sticky top-0 flex flex-col h-screen w-full items-center justify-center bg-zinc-950 pt-20 px-6 overflow-hidden">
-            <div class="absolute w-96 h-96 bg-cyan-500/5 rounded-full blur-3xl pointer-events-none"></div>
+            <div class="absolute w-96 h-96 bg-red-500/5 rounded-full blur-3xl pointer-events-none"></div>
 
-            <h4 class="text-sm font-semibold text-cyan-400 tracking-widest uppercase mb-2">Hi, I'm</h4>
+            <h4 class="text-sm font-semibold text-red-400 tracking-widest uppercase mb-2">Hi, I'm</h4>
             <h1 class="text-5xl sm:text-6xl font-black text-white tracking-tight">Ayrton Gallo</h1>
             <h3 class="text-lg sm:text-xl font-medium text-zinc-400 mt-4 text-center max-w-xl">
-                Software Engineer <span class="text-zinc-600">&</span> Data Science Enthusiast
+                Software Engineer <span class="text-zinc-600">&</span> Data Science Specialist
             </h3>
             <div class="mt-8 animate-bounce text-zinc-600">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -48,6 +49,7 @@
         </section>
     </div>
 
+    <!-- PROJECTS SECTION -->
     <div id="projects" class="relative h-screen w-full snap-start">
         <section class="sticky top-0 flex flex-col h-screen w-full items-center justify-center bg-zinc-900 pt-20 px-6">
             <div class="text-center mb-10">
@@ -56,7 +58,6 @@
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl w-full">
-
                 <a href="/forge" class="group relative bg-zinc-950/40 backdrop-blur-xs rounded-xl p-6 border border-zinc-800 hover:border-cyan-500/50 transition-all duration-300 shadow-xl hover:shadow-cyan-500/5 flex flex-col justify-between overflow-hidden">
                     <div class="absolute -top-4 -right-4 w-20 h-20 bg-cyan-500/5 rounded-full blur-xl group-hover:bg-cyan-500/10 transition-all duration-300"></div>
                     <div>
@@ -74,79 +75,267 @@
                         Enter Forge <span class="ml-1.5">&rarr;</span>
                     </div>
                 </a>
-
-                <a href="/vault" class="group relative bg-zinc-950/40 backdrop-blur-xs rounded-xl p-6 border border-zinc-800 hover:border-emerald-500/50 transition-all duration-300 shadow-xl hover:shadow-emerald-500/5 flex flex-col justify-between overflow-hidden">
-                    <div class="absolute -top-4 -right-4 w-20 h-20 bg-emerald-500/5 rounded-full blur-xl group-hover:bg-emerald-500/10 transition-all duration-300"></div>
+                <a href="/vault" class="group relative bg-zinc-950/40 backdrop-blur-xs rounded-xl p-6 border border-zinc-800 hover:border-green-500/50 transition-all duration-300 shadow-xl hover:shadow-green-500/5 flex flex-col justify-between overflow-hidden">
+                    <div class="absolute -top-4 -right-4 w-20 h-20 bg-green-500/5 rounded-full blur-xl group-hover:bg-green-500/10 transition-all duration-300"></div>
                     <div>
-                        <div class="text-emerald-400 mb-4 bg-emerald-500/5 w-10 h-10 rounded-lg flex items-center justify-center border border-emerald-500/10">
+                        <div class="text-green-400 mb-4 bg-green-500/5 w-10 h-10 rounded-lg flex items-center justify-center border border-green-500/10">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2.21 3.58 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.58 4 8 4s8-1.79 8-4M4 7c0-2.21 3.58-4 8-4s8 1.79 8 4m0 5c0 2.21-3.58 4-8 4s-8-1.79-8-4" />
                             </svg>
                         </div>
-                        <h3 class="text-xl font-bold text-white group-hover:text-emerald-400 transition-colors duration-200">/vault</h3>
+                        <h3 class="text-xl font-bold text-white group-hover:text-green-400 transition-colors duration-200">/vault</h3>
                         <p class="mt-2 text-sm text-zinc-400 leading-relaxed">
                             Data science ecosystem. Analytics pipelines, structured repositories, database designs, and machine learning models.
                         </p>
                     </div>
-                    <div class="mt-6 flex items-center text-xs font-semibold text-emerald-400 group-hover:translate-x-1 transition-transform duration-200">
+                    <div class="mt-6 flex items-center text-xs font-semibold text-green-400 group-hover:translate-x-1 transition-transform duration-200">
                         Unlock Vault <span class="ml-1.5">&rarr;</span>
                     </div>
                 </a>
-
-                <a href="/atlas" class="group relative bg-zinc-950/40 backdrop-blur-xs rounded-xl p-6 border border-zinc-800 hover:border-amber-500/50 transition-all duration-300 shadow-xl hover:shadow-amber-500/5 flex flex-col justify-between overflow-hidden">
-                    <div class="absolute -top-4 -right-4 w-20 h-20 bg-amber-500/5 rounded-full blur-xl group-hover:bg-amber-500/10 transition-all duration-300"></div>
+                <a href="/atlas" class="group relative bg-zinc-950/40 backdrop-blur-xs rounded-xl p-6 border border-zinc-800 hover:border-yellow-500/50 transition-all duration-300 shadow-xl hover:shadow-yellow-500/5 flex flex-col justify-between overflow-hidden">
+                    <div class="absolute -top-4 -right-4 w-20 h-20 bg-yellow-500/5 rounded-full blur-xl group-hover:bg-yellow-500/10 transition-all duration-300"></div>
                     <div>
-                        <div class="text-amber-400 mb-4 bg-amber-500/5 w-10 h-10 rounded-lg flex items-center justify-center border border-amber-500/10">
+                        <div class="text-yellow-400 mb-4 bg-yellow-500/5 w-10 h-10 rounded-lg flex items-center justify-center border border-yellow-500/10">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
                             </svg>
                         </div>
-                        <h3 class="text-xl font-bold text-white group-hover:text-amber-400 transition-colors duration-200">/atlas</h3>
+                        <h3 class="text-xl font-bold text-white group-hover:text-yellow-400 transition-colors duration-200">/atlas</h3>
                         <p class="mt-2 text-sm text-zinc-400 leading-relaxed">
                             Mathematics, statistics, and theory blog. Deep mapping of numerical patterns, simulations, and algorithmic concepts.
                         </p>
                     </div>
-                    <div class="mt-6 flex items-center text-xs font-semibold text-amber-400 group-hover:translate-x-1 transition-transform duration-200">
+                    <div class="mt-6 flex items-center text-xs font-semibold text-yellow-400 group-hover:translate-x-1 transition-transform duration-200">
                         Open Atlas <span class="ml-1.5">&rarr;</span>
                     </div>
                 </a>
-
             </div>
         </section>
     </div>
 
+    <!-- SKILLS SECTION -->
     <div id="skills" class="relative h-screen w-full snap-start">
-        <section class="sticky top-0 flex flex-col h-screen w-full items-center justify-center bg-zinc-950 pt-20 px-6">
-            <h1 class="text-4xl font-extrabold text-white tracking-tight mb-4">Skills</h1>
-            <div class="w-16 h-1 bg-cyan-500/50 rounded-full"></div>
+        <section class="sticky top-0 flex flex-col h-screen w-full items-center justify-center bg-zinc-950 pt-24 px-6 overflow-y-auto">
+            <div class="text-center mb-8 shrink-0">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Skills & Tech Stack</h2>
+                <p class="text-sm text-zinc-400 mt-2">Proficiencies, architectures, and foundational domains.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 max-w-5xl w-full pb-10">
+                <!-- Frontend -->
+                <div class="group bg-zinc-900/40 backdrop-blur-xs border border-zinc-800/80 hover:border-purple-500/40 rounded-xl p-5 shadow-lg hover:shadow-purple-500/5 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="p-2 rounded-lg bg-purple-500/10 text-purple-400 border border-purple-500/10 group-hover:scale-105 transition-transform duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                </svg>
+                            </span>
+                            <h3 class="font-bold text-zinc-100 group-hover:text-purple-400 transition-colors duration-200">Frontend Development</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="text-xs bg-zinc-900 text-zinc-400 px-2.5 py-1 rounded-md border border-zinc-800 hover:border-purple-500/30 hover:text-purple-300 transition-colors duration-200">React / Tailwind CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend & Architecture -->
+                <div class="group bg-zinc-900/40 backdrop-blur-xs border border-zinc-800/80 hover:border-blue-500/40 rounded-xl p-5 shadow-lg hover:shadow-blue-500/5 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="p-2 rounded-lg bg-blue-500/10 text-blue-400 border border-blue-500/10 group-hover:scale-105 transition-transform duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v4a2 2 0 00-2-2" />
+                                </svg>
+                            </span>
+                            <h3 class="font-bold text-zinc-100 group-hover:text-blue-400 transition-colors duration-200">Backend & Architectures</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="text-xs bg-zinc-900 text-zinc-400 px-2.5 py-1 rounded-md border border-zinc-800 hover:border-blue-500/30 hover:text-blue-300 transition-colors duration-200">.NET Core / C#</span>
+                            <span class="text-xs bg-zinc-900 text-zinc-400 px-2.5 py-1 rounded-md border border-zinc-800 hover:border-blue-500/30 hover:text-blue-300 transition-colors duration-200">Node.js / Python</span>
+                            <span class="text-xs bg-zinc-900 text-zinc-400 px-2.5 py-1 rounded-md border border-zinc-800 hover:border-blue-500/30 hover:text-blue-300 transition-colors duration-200">RESTful APIs</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Financial Data Science -->
+                <div class="group bg-zinc-900/40 backdrop-blur-xs border border-zinc-800/80 hover:border-green-500/40 rounded-xl p-5 shadow-lg hover:shadow-green-500/5 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="p-2 rounded-lg bg-green-500/10 text-green-400 border border-green-500/10 group-hover:scale-105 transition-transform duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                                </svg>
+                            </span>
+                            <h3 class="font-bold text-zinc-100 group-hover:text-green-400 transition-colors duration-200">Data Science & Analytics</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="text-xs bg-zinc-900 text-zinc-400 px-2.5 py-1 rounded-md border border-zinc-800 hover:border-green-500/30 hover:text-green-300 transition-colors duration-200">Pandas / NumPy</span>
+                            <span class="text-xs bg-zinc-900 text-zinc-400 px-2.5 py-1 rounded-md border border-zinc-800 hover:border-green-500/30 hover:text-green-300 transition-colors duration-200">Time Series / SQL</span>
+                            <span class="text-xs bg-zinc-900 text-zinc-400 px-2.5 py-1 rounded-md border border-zinc-800 hover:border-green-500/30 hover:text-green-300 transition-colors duration-200">Scikit-Learn</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mathematics & Econometrics -->
+                <div class="group bg-zinc-900/40 backdrop-blur-xs border border-zinc-800/80 hover:border-yellow-500/40 rounded-xl p-5 shadow-lg hover:shadow-yellow-500/5 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="p-2 rounded-lg bg-yellow-500/10 text-yellow-400 border border-yellow-500/10 group-hover:scale-105 transition-transform duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                                </svg>
+                            </span>
+                            <h3 class="font-bold text-zinc-100 group-hover:text-yellow-400 transition-colors duration-200">Mathematics & Econ</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="text-xs bg-zinc-900 text-zinc-400 px-2.5 py-1 rounded-md border border-zinc-800 hover:border-yellow-500/30 hover:text-yellow-300 transition-colors duration-200">Linear Algebra</span>
+                            <span class="text-xs bg-zinc-900 text-zinc-400 px-2.5 py-1 rounded-md border border-zinc-800 hover:border-yellow-500/30 hover:text-yellow-300 transition-colors duration-200">Econometrics</span>
+                            <span class="text-xs bg-zinc-900 text-zinc-400 px-2.5 py-1 rounded-md border border-zinc-800 hover:border-yellow-500/30 hover:text-yellow-300 transition-colors duration-200">Statistical Modeling</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cloud & Infrastructure -->
+                <div class="group bg-zinc-900/40 backdrop-blur-xs border border-zinc-800/80 hover:border-cyan-500/40 rounded-xl p-5 shadow-lg hover:shadow-cyan-500/5 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="p-2 rounded-lg bg-cyan-500/10 text-cyan-400 border border-cyan-500/10 group-hover:scale-105 transition-transform duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+                                </svg>
+                            </span>
+                            <h3 class="font-bold text-zinc-100 group-hover:text-cyan-400 transition-colors duration-200">Cloud & Infrastructure</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="text-xs bg-zinc-900 text-zinc-400 px-2.5 py-1 rounded-md border border-zinc-800 hover:border-cyan-500/30 hover:text-cyan-300 transition-colors duration-200">Docker</span>
+                            <span class="text-xs bg-zinc-900 text-zinc-400 px-2.5 py-1 rounded-md border border-zinc-800 hover:border-cyan-500/30 hover:text-cyan-300 transition-colors duration-200">Git / CI/CD Pipelines</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Engineering Principles -->
+                <div class="group bg-zinc-900/40 backdrop-blur-xs border border-zinc-800/80 hover:border-rose-500/40 rounded-xl p-5 shadow-lg hover:shadow-rose-500/5 transition-all duration-300 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center gap-3 mb-3">
+                            <span class="p-2 rounded-lg bg-rose-500/10 text-rose-400 border border-rose-500/10 group-hover:scale-105 transition-transform duration-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01" />
+                                </svg>
+                            </span>
+                            <h3 class="font-bold text-zinc-100 group-hover:text-rose-400 transition-colors duration-200">Engineering Principles</h3>
+                        </div>
+                        <div class="flex flex-wrap gap-2 mt-4">
+                            <span class="text-xs bg-zinc-900 text-zinc-400 px-2.5 py-1 rounded-md border border-zinc-800 hover:border-rose-500/30 hover:text-rose-300 transition-colors duration-200">GQA / Testing Structures</span>
+                            <span class="text-xs bg-zinc-900 text-zinc-400 px-2.5 py-1 rounded-md border border-zinc-800 hover:border-rose-500/30 hover:text-rose-300 transition-colors duration-200">Agile Methodologies</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </div>
 
+    <!-- ABOUT SECTION -->
     <div id="about" class="relative h-screen w-full snap-start">
-        <section class="sticky top-0 flex flex-col h-screen w-full items-center justify-center bg-zinc-900 pt-20 px-6">
-            <h1 class="text-4xl font-extrabold text-white tracking-tight mb-4">About</h1>
-            <div class="w-16 h-1 bg-emerald-500/50 rounded-full"></div>
+        <section class="sticky top-0 flex flex-col h-screen w-full items-center justify-center bg-zinc-900 pt-24 px-6 overflow-y-auto">
+            <div class="text-center mb-8 shrink-0">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">About Me</h2>
+                <div class="w-16 h-1 bg-red-500/50 rounded-full mt-3 mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl w-full pb-10 items-stretch">
+                <!-- Academic & Professional Narrative -->
+                <div class="md:col-span-2 bg-zinc-950/40 backdrop-blur-xs border border-zinc-800/80 rounded-xl p-6 shadow-lg flex flex-col justify-center space-y-4 text-sm sm:text-base text-zinc-300 leading-relaxed">
+                    <p>
+                        I'm a <strong class="text-white">Software Engineer</strong> with over 3 years of industry experience, bridging enterprise systems development with computational data analysis. My journey into engineering started at just 11 years old, when I taught myself <strong class="text-white">HTML and CSS</strong> to build my own websites. That quickly grew into real programming: writing <strong class="text-white">Java</strong> to build custom Minecraft mods, and scripting in <strong class="text-white">Pawn</strong> to create plugins for Counter-Strike / Half-Life AMX Mod X servers. That early obsession with logic and mechanics is what eventually led me to my first role in the industry, at <strong class="text-white">Globant</strong>, working as a Game Quality Analyst for our client, <strong class="text-white">Electronic Arts</strong>.
+                    </p>
+                    <p>
+                        Right now I'm finishing my <strong class="text-white">Technical Degree in Software Development</strong> (an Associate Degree), building high-performance backend layers, data persistence layers, and cloud API integrations with <strong class="text-white">.NET (C#)</strong>. This program has sharpened my focus on object-oriented architecture and advanced database modeling. Alongside it, I'm completing a Postgraduate-level <strong class="text-white">Diploma in Data Science, AI, and its Applications in Economics & Business</strong>, which combines statistical predictive modeling with econometrics and machine learning, training me to turn raw data into actionable insight and build analytical pipelines for market and financial analysis.
+                    </p>
+                    <p>
+                        After graduating, I plan to move into a <strong class="text-white">Bachelor's Degree in Information Technology</strong>, where I'll steer my electives toward <strong class="text-white">AI, Machine Learning, Big Data & Analytics, Cloud Computing, and Fintech</strong>, continuing to build on my software and systems foundation, before advancing into a <strong class="text-white">Master's degree</strong> to keep specializing further.
+                    </p>
+                </div>
+
+                <!-- Technical Curricula Pillars -->
+                <div class="flex flex-col gap-4 justify-between">
+                    <div class="bg-zinc-950/40 backdrop-blur-xs border border-zinc-800/80 rounded-xl p-5 shadow-lg space-y-4 flex-1 flex flex-col justify-center">
+
+                        <!-- Pillar 1: Systems Architecture (Associate Core) -->
+                        <div class="flex items-start gap-3.5">
+                        <span class="p-2 rounded-lg bg-red-500/10 text-red-400 border border-red-500/10 shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v4a2 2 0 00-2-2" />
+                            </svg>
+                        </span>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Backend Systems</h4>
+                                <p class="text-xs text-zinc-400 mt-0.5">Enterprise architecture patterns, web API design, and component-driven .NET compilation.</p>
+                            </div>
+                        </div>
+
+                        <!-- Pillar 2: Econometric Analytics (Diploma Core) -->
+                        <div class="flex items-start gap-3.5">
+                        <span class="p-2 rounded-lg bg-red-500/10 text-red-400 border border-red-500/10 shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 8v8m-4-5v5m-4-2v2m-2 4h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                            </svg>
+                        </span>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Quantitative Analytics</h4>
+                                <p class="text-xs text-zinc-400 mt-0.5">Applying statistical inference, forecasting algorithms, and business decision models.</p>
+                            </div>
+                        </div>
+
+                        <!-- Pillar 3: Data Lifecycle (Data Engineering Core) -->
+                        <div class="flex items-start gap-3.5">
+                        <span class="p-2 rounded-lg bg-red-500/10 text-red-400 border border-red-500/10 shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z" />
+                            </svg>
+                        </span>
+                            <div>
+                                <h4 class="text-sm font-bold text-white">Data Infrastructure</h4>
+                                <p class="text-xs text-zinc-400 mt-0.5">Relational database normalization, complex SQL, ETL pipelines, and structured schemas.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Action Button -->
+                    <a href="/assets/files/AyrtonGallo-resume.docx" download class="group relative w-full bg-red-500/10 text-red-400 border border-red-500/20 hover:bg-red-500/20 hover:border-red-500/40 font-semibold py-3.5 px-6 rounded-xl text-center shadow-lg transition-all duration-300 flex items-center justify-center gap-2 overflow-hidden shrink-0">
+                        <div class="absolute -top-4 -right-4 w-12 h-12 bg-red-500/5 rounded-full blur-xl group-hover:bg-red-500/10 transition-all duration-300"></div>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 group-hover:translate-y-0.5 transition-transform duration-200" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                        <span class="text-xs tracking-wide uppercase">Download Resume</span>
+                    </a>
+                </div>
+            </div>
         </section>
     </div>
 
+    <!-- EXPERIENCE SECTION -->
     <div id="experience" class="relative h-screen w-full snap-start">
         <section class="sticky top-0 flex flex-col h-screen w-full items-center justify-center bg-zinc-950 pt-20 px-6">
-            <h1 class="text-4xl font-extrabold text-white tracking-tight mb-4">Experience</h1>
-            <div class="w-16 h-1 bg-amber-500/50 rounded-full"></div>
+            <h1 class="text-4xl font-extrabold text-white tracking-tight">Experience</h1>
+            <div class="w-16 h-1 bg-yellow-500/50 rounded-full mt-4"></div>
         </section>
     </div>
 
+    <!-- EDUCATION SECTION -->
     <div id="education" class="relative h-screen w-full snap-start">
         <section class="sticky top-0 flex flex-col h-screen w-full items-center justify-center bg-zinc-900 pt-20 px-6">
-            <h1 class="text-4xl font-extrabold text-white tracking-tight mb-4">Education</h1>
-            <div class="w-16 h-1 bg-cyan-500/50 rounded-full"></div>
+            <h1 class="text-4xl font-extrabold text-white tracking-tight">Education</h1>
+            <div class="w-16 h-1 bg-cyan-500/50 rounded-full mt-4"></div>
         </section>
     </div>
 
+    <!-- CONTACT SECTION -->
     <div id="contact" class="relative h-screen w-full snap-start">
         <section class="sticky top-0 flex flex-col h-screen w-full items-center justify-center bg-zinc-950 pt-20 px-6">
-            <h1 class="text-4xl font-extrabold text-white tracking-tight mb-4">Contact</h1>
-            <div class="w-16 h-1 bg-emerald-500/50 rounded-full"></div>
+            <h1 class="text-4xl font-extrabold text-white tracking-tight">Contact</h1>
+            <div class="w-16 h-1 bg-green-500/50 rounded-full mt-4"></div>
         </section>
     </div>
 
