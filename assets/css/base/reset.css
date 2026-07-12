@@ -1,0 +1,32 @@
+/* 1. Reseteo de márgenes y tamaños base */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Mejoras de accesibilidad y usabilidad */
+html, body {
+    height: 100%;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 3. Evitar problemas con imágenes y elementos multimedia */
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 4. Heredar fuentes en elementos de formulario */
+input, button, textarea, select {
+    font: inherit;
+}
+
+/* 5. Eliminar bordes y estilos en listas y enlaces */
+ul, ol {
+    list-style: none;
+}
