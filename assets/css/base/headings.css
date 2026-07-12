@@ -1,0 +1,9 @@
+.h1 {
+    font-size: var(--text-h1);
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+.h2 {
+    font-size: var(--text-h2);
+}

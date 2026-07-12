@@ -1,0 +1,24 @@
+:root {
+    /* --- Primitive / Base Tokens (What the color is) --- */
+    --color-dark-gray: #222831;
+    --color-medium-gray: #393E46;
+    --color-teal: #00ADB5;
+    --color-light-gray: #EEEEEE;
+
+    /* --- Semantic Tokens (What the color does) --- */
+
+    /* Backgrounds */
+    --bg-primary: var(--color-dark-gray);
+    --bg-secondary: var(--color-medium-gray);
+    --bg-surface: var(--color-light-gray);
+
+    /* Typography */
+    --text-primary: var(--color-light-gray);
+    --text-secondary: var(--color-medium-gray);
+    --text-inverse: var(--color-dark-gray);
+
+    /* Accents & Actions */
+    --action-primary: var(--color-teal);
+    --action-hover: #00c2cc; /* Slightly lighter teal for hover states */
+    --border-muted: var(--color-medium-gray);
+}
