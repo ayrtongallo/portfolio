@@ -1,0 +1,49 @@
+.text {
+    font-size: 1rem;
+}
+
+.h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    border-bottom: .5rem solid var(--medium-gray);
+}
+
+.h2 {
+    font-size: 2rem;
+}
+
+.h3 {
+    font-size: 1.5rem;
+}
+
+.h4 {
+    font-size: 1.25rem;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.w-500 {
+    font-weight: 500;
+}
+
+.w-700 {
+    font-weight: 700;
+}
+
+.w-900 {
+    font-weight: 900
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
