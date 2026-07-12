@@ -6,19 +6,13 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     font-family: sans-serif;
     font-size: 3rem;
     padding: 15%;
 }
 
-#projects section ul {
-    display: flex;
-    flex-direction: row;
-
-}
-
-#projects section ul li {
-    background-color: var(--dark-gray);
+hr {
+    width: 100%;
     color: var(--light-gray);
 }

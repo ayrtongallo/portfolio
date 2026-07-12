@@ -25,15 +25,20 @@ nav ul {
 
 nav ul li {
     padding: .5rem 1.5rem;
-    transition: 250ms all;
-    border-bottom: .25rem solid transparent;
+    transition: 300ms all;
+    border-bottom: .125rem solid transparent;
 }
 
 nav ul li:hover {
-    border-bottom: .25rem solid var(--accent-color);
+    border-bottom: .125rem solid var(--accent-color);
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: 700;
+}
+
+nav ul li:hover > a {
+    color: var(--accent-color);
 }

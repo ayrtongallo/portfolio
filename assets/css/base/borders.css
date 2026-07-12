@@ -1,0 +1,23 @@
+.border-bottom1 {
+    border-bottom: .5rem solid;
+}
+
+.border-bottom2 {
+    border-bottom: .125rem solid;
+}
+
+.border-color-light {
+    border-color: var(--medium-gray);
+}
+
+.border-color-medium {
+    border-color: var(--medium-gray);
+}
+
+.border-color-dark {
+    border-color: var(--dark-gray);
+}
+
+.border-color-accent {
+    border-color: var(--accent-color);
+}
