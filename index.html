@@ -2,56 +2,81 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body>
-<header>
-    <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#contact">Contact</a></li>
+<body class="bg-zinc-950 text-white overflow-hidden">
+
+<header class="fixed top-0 left-0 w-full z-50 bg-zinc-950/50 backdrop-blur-md">
+    <nav class="max-w-6xl mx-auto px-6">
+        <ul class="flex justify-between items-center py-6">
+            <li class="font-bold text-xl tracking-wider font-sans"><a href="#home">Ayrton</a></li>
+
+            <div class="flex gap-8">
+                <li><a href="#home" class="font-semibold pb-2 border-b-3 border-red-500/0 hover:border-cyan-500  hover:text-cyan-500 transition-all duration-200">Home</a></li>
+                <li><a href="#projects" class="font-semibold pb-2 border-b-3 border-red-500/0 hover:border-cyan-500  hover:text-cyan-500 transition-all duration-200">Projects</a></li>
+                <li><a href="#skills" class="font-semibold pb-2 border-b-3 border-red-500/0 hover:border-cyan-500  hover:text-cyan-500 transition-all duration-200">Skills</a></li>
+                <li><a href="#about" class="font-semibold pb-2 border-b-3 border-red-500/0 hover:border-cyan-500  hover:text-cyan-500 transition-all duration-200">About</a></li>
+                <li><a href="#experience" class="font-semibold pb-2 border-b-3 border-red-500/0 hover:border-cyan-500  hover:text-cyan-500 transition-all duration-200">Experience</a></li>
+                <li><a href="#education" class="font-semibold pb-2 border-b-3 border-red-500/0 hover:border-cyan-500  hover:text-cyan-500 transition-all duration-200">Education</a></li>
+                <li><a href="#contact" class="font-semibold pb-2 border-b-3 border-red-500/0 hover:border-cyan-500  hover:text-cyan-500 transition-all duration-200">Contact</a></li>
+            </div>
         </ul>
     </nav>
 </header>
-<main class="h-screen overflow-y-scroll snap-y snap-mandatory">
-    <!--Home section-->
-    <section class="top-20 flex h-[calc(100vh-5rem)] w-full snap-start items-center justify-center bg-zinc-950">
 
-    </section>
-    <!--Projects section-->
-    <section class="top-20 flex h-[calc(100vh-5rem)] w-full snap-start items-center justify-center bg-zinc-900">
+<main class="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth">
 
-    </section>
-    <!--Skills-->
-    <section class="top-20 flex h-[calc(100vh-5rem)] w-full snap-start items-center justify-center bg-zinc-950">
+    <div id="home" class="relative h-screen w-full snap-start">
+        <section class="sticky top-0 flex flex-col h-screen w-full items-center justify-center bg-zinc-950 pt-20">
+            <h4 class="text-lg">Hi, I'm</h4>
+            <h1 class="text-5xl font-black">Ayrton Gallo</h1>
+            <h3 class="text-xl font-medium text-neutral-500 pt-2">Software Engineer & Data Science Enthusiast</h3>
+        </section>
+    </div>
 
-    </section>
-    <!--About-->
-    <section class="top-20 flex h-[calc(100vh-5rem)] w-full snap-start items-center justify-center bg-zinc-900">
+    <div id="projects" class="relative h-screen w-full snap-start">
+        <section class="sticky top-0 flex h-screen w-full items-center justify-center bg-zinc-900 pt-20">
+            <h1 class="text-4xl font-bold">Projects</h1>
+        </section>
+    </div>
 
-    </section>
-    <!--Experience-->
-    <section class="top-20 flex h-[calc(100vh-5rem)] w-full snap-start items-center justify-center bg-zinc-950">
+    <div id="skills" class="relative h-screen w-full snap-start">
+        <section class="sticky top-0 flex h-screen w-full items-center justify-center bg-zinc-950 pt-20">
+            <h1 class="text-4xl font-bold">Skills</h1>
+        </section>
+    </div>
 
-    </section>
-    <!--Education-->
-    <section class="top-20 flex h-[calc(100vh-5rem)] w-full snap-start items-center justify-center bg-zinc-900">
+    <div id="about" class="relative h-screen w-full snap-start">
+        <section class="sticky top-0 flex h-screen w-full items-center justify-center bg-zinc-900 pt-20">
+            <h1 class="text-4xl font-bold">About</h1>
+        </section>
+    </div>
 
-    </section>
-    <!--Contact-->
-    <section class="top-20 flex h-[calc(100vh-5rem)] w-full snap-start items-center justify-center bg-zinc-950">
+    <div id="experience" class="relative h-screen w-full snap-start">
+        <section class="sticky top-0 flex h-screen w-full items-center justify-center bg-zinc-950 pt-20">
+            <h1 class="text-4xl font-bold">Experience</h1>
+        </section>
+    </div>
 
-    </section>
+    <div id="education" class="relative h-screen w-full snap-start">
+        <section class="sticky top-0 flex h-screen w-full items-center justify-center bg-zinc-900 pt-20">
+            <h1 class="text-4xl font-bold">Education</h1>
+        </section>
+    </div>
+
+    <div id="contact" class="relative h-screen w-full snap-start">
+        <section class="sticky top-0 flex h-screen w-full items-center justify-center bg-zinc-950 pt-20">
+            <h1 class="text-4xl font-bold">Contact</h1>
+        </section>
+    </div>
+
+    <footer class="bg-zinc-950 py-6 text-center text-sm text-zinc-500 relative z-50">
+        Copyright &copy; 2026 - Ayrton Nehuen Gallo Salinas, All Rights Reserved.
+    </footer>
 </main>
-<footer>Copyright &copy; 2026 - Ayrton Nehuen Gallo Salinas, All Rights Reserved.</footer>
+
 </body>
 </html>
