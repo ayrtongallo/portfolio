@@ -1,52 +1,26 @@
 export const education = [
-    {   status: "dropped",
-        name: "National University of Cordoba",
-        date: "2021 - 2024",
-        title: "Bachelor's Degree in Computer Science",
-        description: "Dropped due to severe overlap in schedule with my first job at Globant.",
-        bulletpoints: [
-            "1",
-            "2",
-            "3"
-        ]},
-    {   status: "ongoing",
-        name: "National University of Cordoba",
-        date: "2026 - 2027",
-        title: "Diploma in Data Science, AI, and its Applications in Economics & Business",
-        description: "N/A",
-        bulletpoints: [
-            "1",
-            "2",
-            "3"
-        ]},
-    {   status: "ongoing",
-        name: "ISTEA",
-        date: "2026 - 2028",
-        title: "Bachelor's Degree in Computer Science",
-        description: "test",
-        bulletpoints: [
-            "1",
-            "2",
-            "3"
-        ]},
-    {   status: "planned",
-        name: "Palermo University",
-        date: "2028 - 2030",
-        title: "Bachelor's Degree in Information Technology",
-        description: "N/A",
-        bulletpoints: [
-            "1",
-            "2",
-            "3"
-        ]},
-    {   status: "planned",
-        name: "Anywhere",
-        date: "2021 - 2024",
-        title: "Master's Degree in {UNDEFINED}",
-        description: "N/A",
-        bulletpoints: [
-            "1",
-            "2",
-            "3"
-        ]}
-]
+    {
+        title: "B.S. in Computer Science",
+        name: "Tech University",
+        date: "2024 - 2028",
+        status: "ongoing", // Will automatically render Green
+        description: "Focusing on systems programming and data structures.",
+        bulletpoints: ["GPA: 3.8", "Dean's List"]
+    },
+    {
+        title: "M.S. in Machine Learning",
+        name: "Stanford Online",
+        date: "Planned for 2029",
+        status: "planned", // Will automatically render Purple
+        description: "Advanced deep learning architectures and reinforcement learning.",
+        bulletpoints: ["Prerequisites completed"]
+    },
+    {
+        title: "Some Other Degree",
+        name: "Old Academy",
+        date: "2022 - 2023",
+        status: "dropped", // Will automatically render Red/Orange
+        description: "A course sequence I decided to step away from.",
+        bulletpoints: ["Completed introductory credits"]
+    }
+];
