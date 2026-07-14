@@ -129,8 +129,10 @@
                             </span>
                             <h3 class="font-bold text-zinc-100 group-hover:text-purple-400 transition-colors duration-200">Frontend Development</h3>
                         </div>
-                        <div class="flex flex-wrap gap-2 mt-4">
+                        <div class="flex flex-wrap gap-2 mt-4" id="frontend-dev">
                             <span class="text-xs bg-zinc-900 text-zinc-400 px-2.5 py-1 rounded-md border border-zinc-800 hover:border-purple-500/30 hover:text-purple-300 transition-colors duration-200">React / Tailwind CSS</span>
+                            <span class="text-xs bg-zinc-900 text-zinc-400 px-2.5 py-1 rounded-md border border-zinc-800 hover:border-purple-500/30 hover:text-purple-300 transition-colors duration-200">React / Tailwind CSS</span>
+
                         </div>
                     </div>
                 </div>
@@ -300,24 +302,315 @@
     </div>
 
     <div id="experience" class="relative min-h-screen md:h-screen w-full md:snap-start">
-        <section class="md:sticky md:top-0 flex flex-col min-h-screen md:h-screen w-full items-center justify-center bg-zinc-950 pt-24 pb-12 px-6">
-            <h1 class="text-4xl font-extrabold text-white tracking-tight">Experience</h1>
-            <div class="w-16 h-1 bg-yellow-500/50 rounded-full mt-4"></div>
-            WIP
+        <section class="md:sticky md:top-0 flex flex-col min-h-screen md:h-screen w-full items-center justify-center bg-zinc-950 pt-24 pb-12 px-6 overflow-hidden">
+            <div class="text-center mb-8 shrink-0">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Experience</h2>
+                <div class="w-16 h-1 bg-yellow-500/50 rounded-full mt-3 mx-auto"></div>
+            </div>
+
+            <!-- Timeline Container -->
+            <div class="relative max-w-3xl w-full px-2 sm:px-6 max-h-[60vh] md:max-h-[65vh] overflow-y-auto scrollbar-thin scrollbar-thumb-zinc-800 scrollbar-track-transparent">
+
+                <!-- Vertical timeline connector line on the left -->
+                <div class="absolute left-6 sm:left-10 top-2 bottom-2 w-0.5 bg-zinc-800/80"></div>
+
+                <div class="space-y-6">
+
+                    <!-- Experience Item 1 -->
+                    <div class="relative pl-10 sm:pl-16 group">
+                        <!-- Timeline circle/marker with neon hover indicator -->
+                        <div class="absolute left-4 sm:left-8 top-2.5 w-4 h-4 rounded-full bg-zinc-950 border-2 border-yellow-500 group-hover:bg-yellow-500 group-hover:scale-125 transition-all duration-300 shadow-md shadow-yellow-500/10"></div>
+
+                        <!-- Card body -->
+                        <div class="bg-zinc-900/30 backdrop-blur-xs border border-zinc-800/80 hover:border-yellow-500/40 rounded-xl p-5 shadow-lg hover:shadow-yellow-500/5 transition-all duration-300">
+                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1">
+                                <div>
+                                    <h3 class="text-base sm:text-lg font-bold text-white group-hover:text-yellow-400 transition-colors duration-200">Software Developer</h3>
+                                    <p class="text-xs sm:text-sm text-zinc-400 font-medium">Independent Contractor / Academic Projects</p>
+                                </div>
+                                <span class="text-[10px] sm:text-xs font-semibold px-2.5 py-1 rounded bg-yellow-500/10 text-yellow-400 border border-yellow-500/10 self-start mt-1 sm:mt-0">2024 - Present</span>
+                            </div>
+
+                            <!-- Description -->
+                            <p class="mt-3 text-xs sm:text-sm text-zinc-300 leading-relaxed">
+                                Designing and deploying scalable software utilities and analytical codebases.
+                            </p>
+
+                            <!-- Bullet points -->
+                            <ul class="mt-2.5 space-y-1.5 text-xs sm:text-sm text-zinc-400 list-disc list-inside marker:text-yellow-500/70 pl-1">
+                                <li>Architecting high-performance backend layers and RESTful web services in <strong class="text-zinc-200">.NET Core (C#)</strong>.</li>
+                                <li>Building structured relational database schemas, handling complex query optimizations and SQL persistence.</li>
+                                <li>Developing exploratory data science scripts and processing pipelines utilizing <strong class="text-zinc-200">Python</strong>, Pandas, and NumPy.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Experience Item 2 -->
+                    <div class="relative pl-10 sm:pl-16 group">
+                        <!-- Timeline circle/marker -->
+                        <div class="absolute left-4 sm:left-8 top-2.5 w-4 h-4 rounded-full bg-zinc-950 border-2 border-zinc-700 group-hover:border-yellow-500 group-hover:bg-yellow-500 group-hover:scale-125 transition-all duration-300"></div>
+
+                        <!-- Card body -->
+                        <div class="bg-zinc-900/30 backdrop-blur-xs border border-zinc-800/80 hover:border-yellow-500/40 rounded-xl p-5 shadow-lg hover:shadow-yellow-500/5 transition-all duration-300">
+                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1">
+                                <div>
+                                    <h3 class="text-base sm:text-lg font-bold text-white group-hover:text-yellow-400 transition-colors duration-200">Game Quality Analyst</h3>
+                                    <p class="text-xs sm:text-sm text-zinc-400 font-medium">Globant &bull; Client: Electronic Arts</p>
+                                </div>
+                                <span class="text-[10px] sm:text-xs font-semibold px-2.5 py-1 rounded bg-zinc-800/80 text-zinc-400 border border-zinc-700/80 group-hover:bg-yellow-500/10 group-hover:text-yellow-400 group-hover:border-yellow-500/10 self-start mt-1 sm:mt-0">2022 - 2024</span>
+                            </div>
+
+                            <!-- Description -->
+                            <p class="mt-3 text-xs sm:text-sm text-zinc-300 leading-relaxed">
+                                Audited and stress-tested complex client-server interactions and game software builds.
+                            </p>
+
+                            <!-- Bullet points -->
+                            <ul class="mt-2.5 space-y-1.5 text-xs sm:text-sm text-zinc-400 list-disc list-inside marker:text-yellow-500/70 pl-1">
+                                <li>Analyzed live telemetry logs to capture, track, and isolate critical performance blocks.</li>
+                                <li>Collaborated within globally distributed engineering and QA structures using <strong class="text-zinc-200">Agile methodologies</strong>.</li>
+                                <li>Maintained granular test suit documentations detailing engine runtime errors and sync protocols.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Experience Item 3 -->
+                    <div class="relative pl-10 sm:pl-16 group">
+                        <!-- Timeline circle/marker -->
+                        <div class="absolute left-4 sm:left-8 top-2.5 w-4 h-4 rounded-full bg-zinc-950 border-2 border-zinc-800 group-hover:border-yellow-500 group-hover:bg-yellow-500 group-hover:scale-125 transition-all duration-300"></div>
+
+                        <!-- Card body -->
+                        <div class="bg-zinc-900/30 backdrop-blur-xs border border-zinc-800/80 hover:border-yellow-500/40 rounded-xl p-5 shadow-lg hover:shadow-yellow-500/5 transition-all duration-300">
+                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1">
+                                <div>
+                                    <h3 class="text-base sm:text-lg font-bold text-white group-hover:text-yellow-400 transition-colors duration-200">Self-Taught Engineering Foundations</h3>
+                                    <p class="text-xs sm:text-sm text-zinc-400 font-medium">Indie & Community Modding</p>
+                                </div>
+                                <span class="text-[10px] sm:text-xs font-semibold px-2.5 py-1 rounded bg-zinc-800/80 text-zinc-400 border border-zinc-700/80 group-hover:bg-yellow-500/10 group-hover:text-yellow-400 group-hover:border-yellow-500/10 self-start mt-1 sm:mt-0">Early Days</span>
+                            </div>
+
+                            <!-- Description -->
+                            <p class="mt-3 text-xs sm:text-sm text-zinc-300 leading-relaxed">
+                                Acquired core programming and computational logic fundamentals through independent passion projects.
+                            </p>
+
+                            <!-- Bullet points -->
+                            <ul class="mt-2.5 space-y-1.5 text-xs sm:text-sm text-zinc-400 list-disc list-inside marker:text-yellow-500/70 pl-1">
+                                <li>Coded gameplay logic extensions and object models in <strong class="text-zinc-200">Java</strong> for sandbox game modifications.</li>
+                                <li>Scripted custom plugins in <strong class="text-zinc-200">Pawn</strong> targeting community game server integrations.</li>
+                                <li>Discovered the mechanics of web layout structures by self-teaching static HTML & CSS design.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </section>
     </div>
 
     <div id="education" class="relative min-h-screen md:h-screen w-full md:snap-start">
-        <section class="md:sticky md:top-0 flex flex-col min-h-screen md:h-screen w-full items-center justify-center bg-zinc-900 pt-24 pb-12 px-6">
-            <h1 class="text-4xl font-extrabold text-white tracking-tight">Education</h1>
-            <div class="w-16 h-1 bg-cyan-500/50 rounded-full mt-4"></div>
+        <section class="md:sticky md:top-0 flex flex-col min-h-screen md:h-screen w-full items-center justify-center bg-zinc-900 pt-24 pb-12 px-6 overflow-hidden">
+            <div class="text-center mb-8 shrink-0">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Education</h2>
+                <div class="w-16 h-1 bg-cyan-500/50 rounded-full mt-3 mx-auto"></div>
+            </div>
+
+            <!-- Timeline Container -->
+            <div class="relative max-w-3xl w-full px-2 sm:px-6 max-h-[60vh] md:max-h-[65vh] overflow-y-auto scrollbar-thin scrollbar-thumb-zinc-800 scrollbar-track-transparent">
+
+                <!-- Vertical timeline connector line on the left -->
+                <div class="absolute left-6 sm:left-10 top-2 bottom-2 w-0.5 bg-zinc-800/80"></div>
+
+                <div class="space-y-6">
+
+                    <!-- 1. Current Postgraduate Diploma -->
+                    <div class="relative pl-10 sm:pl-16 group">
+                        <!-- Neon Circle Marker -->
+                        <div class="absolute left-4 sm:left-8 top-2.5 w-4 h-4 rounded-full bg-zinc-950 border-2 border-cyan-500 group-hover:bg-cyan-500 group-hover:scale-125 transition-all duration-300 shadow-md shadow-cyan-500/10"></div>
+
+                        <!-- Card -->
+                        <div class="bg-zinc-950/40 backdrop-blur-xs border border-zinc-800/80 hover:border-cyan-500/40 rounded-xl p-5 shadow-lg hover:shadow-cyan-500/5 transition-all duration-300">
+                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1">
+                                <div>
+                                    <h3 class="text-base sm:text-lg font-bold text-white group-hover:text-cyan-400 transition-colors duration-200">Diploma in Data Science, AI & Economics</h3>
+                                    <p class="text-xs sm:text-sm text-zinc-400 font-medium">Postgraduate Diploma &bull; Economics & Business Applications</p>
+                                </div>
+                                <span class="text-[10px] sm:text-xs font-semibold px-2.5 py-1 rounded bg-cyan-500/10 text-cyan-400 border border-cyan-500/10 self-start mt-1 sm:mt-0">2025 - Present</span>
+                            </div>
+
+                            <!-- Description -->
+                            <p class="mt-3 text-xs sm:text-sm text-zinc-300 leading-relaxed">
+                                Merging quantitative analytics with artificial intelligence models to solve real-world industry problems.
+                            </p>
+
+                            <!-- Bullet points -->
+                            <ul class="mt-2.5 space-y-1.5 text-xs sm:text-sm text-zinc-400 list-disc list-inside marker:text-cyan-500/70 pl-1">
+                                <li>Applying predictive machine learning models to business and macro-financial patterns.</li>
+                                <li>Designing statistical data pipelines for economic simulations and data-driven analysis.</li>
+                                <li>Using advanced econometrics methodologies for system prediction and forecasting models.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 2. Current Technical Degree -->
+                    <div class="relative pl-10 sm:pl-16 group">
+                        <div class="absolute left-4 sm:left-8 top-2.5 w-4 h-4 rounded-full bg-zinc-950 border-2 border-cyan-500 group-hover:bg-cyan-500 group-hover:scale-125 transition-all duration-300 shadow-md shadow-cyan-500/10"></div>
+
+                        <div class="bg-zinc-950/40 backdrop-blur-xs border border-zinc-800/80 hover:border-cyan-500/40 rounded-xl p-5 shadow-lg hover:shadow-cyan-500/5 transition-all duration-300">
+                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1">
+                                <div>
+                                    <h3 class="text-base sm:text-lg font-bold text-white group-hover:text-cyan-400 transition-colors duration-200">Technical Degree in Software Development</h3>
+                                    <p class="text-xs sm:text-sm text-zinc-400 font-medium">Associate Degree</p>
+                                </div>
+                                <span class="text-[10px] sm:text-xs font-semibold px-2.5 py-1 rounded bg-cyan-500/10 text-cyan-400 border border-cyan-500/10 self-start mt-1 sm:mt-0">2024 - Present</span>
+                            </div>
+
+                            <!-- Description -->
+                            <p class="mt-3 text-xs sm:text-sm text-zinc-300 leading-relaxed">
+                                Formulating structured foundations in software design patterns and reliable database integrations.
+                            </p>
+
+                            <!-- Bullet points -->
+                            <ul class="mt-2.5 space-y-1.5 text-xs sm:text-sm text-zinc-400 list-disc list-inside marker:text-cyan-500/70 pl-1">
+                                <li>Compiling high-integrity backend modules in <strong class="text-zinc-200">.NET (C#)</strong> using Object-Oriented principles.</li>
+                                <li>Normalizing and modeling complex relational databases and tracking entity lifecycles.</li>
+                                <li>Deploying secure, modern web services, handling API authorization, and routing structures.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 3. FUTURE Target: Bachelor's -->
+                    <div class="relative pl-10 sm:pl-16 group opacity-85 hover:opacity-100 transition-opacity duration-300">
+                        <!-- Dashed circle indicating upcoming/future status -->
+                        <div class="absolute left-4 sm:left-8 top-2.5 w-4 h-4 rounded-full bg-zinc-950 border-2 border-dashed border-cyan-500/60 group-hover:border-solid group-hover:border-cyan-500 group-hover:bg-cyan-500/10 group-hover:scale-125 transition-all duration-300"></div>
+
+                        <div class="bg-zinc-950/20 backdrop-blur-xs border border-dashed border-zinc-800 hover:border-solid hover:border-cyan-500/30 rounded-xl p-5 shadow-lg transition-all duration-300">
+                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1">
+                                <div>
+                                    <h3 class="text-base sm:text-lg font-bold text-zinc-300 group-hover:text-cyan-400 transition-colors duration-200">Bachelor of Information Technology</h3>
+                                    <p class="text-xs sm:text-sm text-zinc-500 font-medium">Next Milestone Goal</p>
+                                </div>
+                                <span class="text-[10px] sm:text-xs font-semibold px-2.5 py-1 rounded bg-zinc-900 text-zinc-500 border border-zinc-800 self-start mt-1 sm:mt-0 uppercase tracking-wider">Future Goal</span>
+                            </div>
+
+                            <!-- Description -->
+                            <p class="mt-3 text-xs sm:text-sm text-zinc-400/80 leading-relaxed">
+                                Intended academic trajectory to synthesize systems architectures with data infrastructure at scale.
+                            </p>
+
+                            <!-- Bullet points -->
+                            <ul class="mt-2.5 space-y-1.5 text-xs sm:text-sm text-zinc-500 list-disc list-inside marker:text-cyan-500/30 pl-1">
+                                <li>Acquire deep mathematical frameworks for Machine Learning algorithms and Big Data pipelines.</li>
+                                <li>Design cloud orchestration workflows, container networks, and continuous integration paths.</li>
+                                <li>Explore modern Fintech architectures and decentralized computational structures.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 4. FUTURE Target: Master's -->
+                    <div class="relative pl-10 sm:pl-16 group opacity-75 hover:opacity-100 transition-opacity duration-300">
+                        <div class="absolute left-4 sm:left-8 top-2.5 w-4 h-4 rounded-full bg-zinc-950 border-2 border-dashed border-cyan-500/40 group-hover:border-solid group-hover:border-cyan-500 group-hover:bg-cyan-500/10 group-hover:scale-125 transition-all duration-300"></div>
+
+                        <div class="bg-zinc-950/10 backdrop-blur-xs border border-dashed border-zinc-800/60 hover:border-solid hover:border-cyan-500/30 rounded-xl p-5 shadow-lg transition-all duration-300">
+                            <div class="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-1">
+                                <div>
+                                    <h3 class="text-base sm:text-lg font-bold text-zinc-400 group-hover:text-cyan-400 transition-colors duration-200">Master's Degree in Computer Science / AI</h3>
+                                    <p class="text-xs sm:text-sm text-zinc-500 font-medium">Long-term Specialization</p>
+                                </div>
+                                <span class="text-[10px] sm:text-xs font-semibold px-2.5 py-1 rounded bg-zinc-900 text-zinc-500 border border-zinc-800/60 self-start mt-1 sm:mt-0 uppercase tracking-wider">Long-Term</span>
+                            </div>
+
+                            <!-- Description -->
+                            <p class="mt-3 text-xs sm:text-sm text-zinc-500/80 leading-relaxed">
+                                High-specialization studies focusing on theoretical computing models and advanced neural structures.
+                            </p>
+
+                            <!-- Bullet points -->
+                            <ul class="mt-2.5 space-y-1.5 text-xs sm:text-sm text-zinc-500/70 list-disc list-inside marker:text-cyan-500/20 pl-1">
+                                <li>Engage in pure algorithmic research and development of custom AI methodologies.</li>
+                                <li>Construct large-scale distributed architectures handling deep data modeling tasks.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
         </section>
     </div>
 
     <div id="contact" class="relative min-h-screen md:h-screen w-full md:snap-start">
-        <section class="md:sticky md:top-0 flex flex-col min-h-screen md:h-screen w-full items-center justify-center bg-zinc-950 pt-24 pb-12 px-6">
-            <h1 class="text-4xl font-extrabold text-white tracking-tight">Contact</h1>
-            <div class="w-16 h-1 bg-green-500/50 rounded-full mt-4"></div>
+        <section class="md:sticky md:top-0 flex flex-col min-h-screen md:h-screen w-full items-center justify-center bg-zinc-950 pt-24 pb-12 px-6 overflow-hidden">
+            <!-- Subtle green background glow -->
+            <div class="absolute w-96 h-96 bg-green-500/5 rounded-full blur-3xl pointer-events-none"></div>
+
+            <div class="text-center mb-10 shrink-0 z-10">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">Contact</h2>
+                <div class="w-16 h-1 bg-green-500/50 rounded-full mt-3 mx-auto"></div>
+                <p class="text-sm text-zinc-400 mt-4 max-w-md">
+                    Let's get in touch! Whether you want to discuss backend architecture, machine learning systems, or just say hello.
+                </p>
+            </div>
+
+            <!-- Contact Cards Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-3xl w-full z-10 px-2">
+
+                <!-- 1. Email -->
+                <a href="mailto:your.email@example.com" class="group relative bg-zinc-900/30 backdrop-blur-xs border border-zinc-800 hover:border-green-500/50 rounded-xl p-5 shadow-lg hover:shadow-green-500/5 transition-all duration-300 flex items-center gap-4">
+                    <div class="text-green-400 bg-green-500/5 w-12 h-12 rounded-lg flex items-center justify-center border border-green-500/10 group-hover:scale-110 transition-transform duration-300 shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-bold text-white group-hover:text-green-400 transition-colors duration-200">Email</h3>
+                        <p class="text-xs text-zinc-400 mt-1">your.email@example.com</p>
+                    </div>
+                </a>
+
+                <!-- 2. LinkedIn -->
+                <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer" class="group relative bg-zinc-900/30 backdrop-blur-xs border border-zinc-800 hover:border-green-500/50 rounded-xl p-5 shadow-lg hover:shadow-green-500/5 transition-all duration-300 flex items-center gap-4">
+                    <div class="text-green-400 bg-green-500/5 w-12 h-12 rounded-lg flex items-center justify-center border border-green-500/10 group-hover:scale-110 transition-transform duration-300 shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-bold text-white group-hover:text-green-400 transition-colors duration-200">LinkedIn</h3>
+                        <p class="text-xs text-zinc-400 mt-1">Connect professionally</p>
+                    </div>
+                </a>
+
+                <!-- 3. GitHub -->
+                <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="group relative bg-zinc-900/30 backdrop-blur-xs border border-zinc-800 hover:border-green-500/50 rounded-xl p-5 shadow-lg hover:shadow-green-500/5 transition-all duration-300 flex items-center gap-4">
+                    <div class="text-green-400 bg-green-500/5 w-12 h-12 rounded-lg flex items-center justify-center border border-green-500/10 group-hover:scale-110 transition-transform duration-300 shrink-0">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 fill-current" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-bold text-white group-hover:text-green-400 transition-colors duration-200">GitHub</h3>
+                        <p class="text-xs text-zinc-400 mt-1">Explore source code</p>
+                    </div>
+                </a>
+
+                <!-- 4. Kaggle -->
+                <a href="https://kaggle.com/yourusername" target="_blank" rel="noopener noreferrer" class="group relative bg-zinc-900/30 backdrop-blur-xs border border-zinc-800 hover:border-green-500/50 rounded-xl p-5 shadow-lg hover:shadow-green-500/5 transition-all duration-300 flex items-center gap-4">
+                    <div class="text-green-400 bg-green-500/5 w-12 h-12 rounded-lg flex items-center justify-center border border-green-500/10 group-hover:scale-110 transition-transform duration-300 shrink-0">
+                        <!-- Custom Kaggle SVG structure -->
+                        <!-- Clean, Accurate Kaggle SVG -->
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M3.6 9h16.8M3.6 15h16.8" />
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M11.5 3a17 17 0 000 18m1-18a17 17 0 010 18" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-bold text-white group-hover:text-green-400 transition-colors duration-200">Kaggle</h3>
+                        <p class="text-xs text-zinc-400 mt-1">Data science portfolios</p>
+                    </div>
+                </a>
+
+            </div>
         </section>
     </div>
 
@@ -325,6 +618,6 @@
         Copyright &copy; 2026 - Ayrton Nehuen Gallo Salinas, All Rights Reserved.
     </footer>
 </main>
-
+<script src="assets/js/main.js" defer></script>
 </body>
 </html>
