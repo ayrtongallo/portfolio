@@ -29,6 +29,7 @@ Purpose:
      Current page (Forge) is highlighted in cyan; others are
      neutral with a cyan/green/yellow hover to hint at their destination.
      ========================================================== -->
+
 <header class="fixed top-0 left-0 w-full z-50 bg-zinc-950/40 backdrop-blur-xs border-b border-zinc-900/80 shadow-lg shadow-zinc-950/20">
     <nav class="max-w-6xl mx-auto px-6 sm:px-10">
         <ul class="flex justify-between items-center py-5">
@@ -37,7 +38,25 @@ Purpose:
             </li>
 
             <div class="flex gap-4 sm:gap-8">
-                <a href="/" class="text-xs sm:text-sm font-medium text-zinc-400 hover:text-white pb-1 border-b-2 border-transparent hover:border-zinc-500 transition-all duration-200">Hub</a>
+                <div class="relative group">
+                    <a href="/" class="flex items-center gap-1 text-xs sm:text-sm font-medium text-zinc-400 hover:text-red-400 pb-1 border-b-2 border-transparent hover:border-red-500/50 transition-all duration-200">
+                        Hub
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-3 w-3 text-zinc-500 group-hover:text-red-400/70 transition-all duration-200 group-hover:rotate-180" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </a>
+                    <div class="absolute left-1/2 -translate-x-1/2 top-full w-44 pt-3 invisible opacity-0 group-hover:visible group-hover:opacity-100 transition-opacity duration-150">
+                        <div class="bg-zinc-900/95 backdrop-blur-xs border border-zinc-800 rounded-xl shadow-xl shadow-zinc-950/40 py-2 overflow-hidden">
+                            <a href="/#home" class="block px-4 py-2 text-xs sm:text-sm text-zinc-400 hover:text-red-400 hover:bg-zinc-800/60 transition-colors duration-150">Home</a>
+                            <a href="/#projects" class="block px-4 py-2 text-xs sm:text-sm text-zinc-400 hover:text-red-400 hover:bg-zinc-800/60 transition-colors duration-150">Projects</a>
+                            <a href="/#skills" class="block px-4 py-2 text-xs sm:text-sm text-zinc-400 hover:text-red-400 hover:bg-zinc-800/60 transition-colors duration-150">Skills</a>
+                            <a href="/#about" class="block px-4 py-2 text-xs sm:text-sm text-zinc-400 hover:text-red-400 hover:bg-zinc-800/60 transition-colors duration-150">About</a>
+                            <a href="/#experience" class="block px-4 py-2 text-xs sm:text-sm text-zinc-400 hover:text-red-400 hover:bg-zinc-800/60 transition-colors duration-150">Experience</a>
+                            <a href="/#education" class="block px-4 py-2 text-xs sm:text-sm text-zinc-400 hover:text-red-400 hover:bg-zinc-800/60 transition-colors duration-150">Education</a>
+                            <a href="/#contact" class="block px-4 py-2 text-xs sm:text-sm text-zinc-400 hover:text-red-400 hover:bg-zinc-800/60 transition-colors duration-150">Contact</a>
+                        </div>
+                    </div>
+                </div>
                 <a href="/forge" class="text-xs sm:text-sm font-semibold text-cyan-400 pb-1 border-b-2 border-cyan-500/60 transition-all duration-200">Forge</a>
                 <a href="/vault" class="text-xs sm:text-sm font-medium text-zinc-400 hover:text-green-400 pb-1 border-b-2 border-transparent hover:border-green-500/50 transition-all duration-200">Vault</a>
                 <a href="/atlas" class="text-xs sm:text-sm font-medium text-zinc-400 hover:text-yellow-400 pb-1 border-b-2 border-transparent hover:border-yellow-500/50 transition-all duration-200">Atlas</a>
